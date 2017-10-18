@@ -25,14 +25,20 @@ body, h1, h2, h3, h4, h5, h6 {
 
 .intro-message {
   position: relative;
-  padding-top: 20%;
-  padding-bottom: 20%;
+  padding-top: 25%;
+  padding-bottom: 17%;
+  text-align: left;
 }
 
-.intro-message>h1 {
+.intro-message > h1 {
+  color: #07f7f7;
   margin: 0;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-  font-size: 5em;
+  margin-bottom: 20px;
+}
+
+.intro-message > h3 {
+  color: #53abab;
 }
 
 .intro-divider {
@@ -144,9 +150,103 @@ body, h1, h2, h3, h4, h5, h6 {
 
 footer {
   padding: 50px 0;
-  background-color: #f8f8f8;
+  background-color: #303535;
+}
+
+footer a, footer a:hover {
+  color: #fff;
 }
 
 p.copyright {
   margin: 15px 0 0;
+}
+
+.navbar {
+	background: #303535 !important
+}
+
+.navbar .nav-item .nav-link {
+  color: #fff;
+}
+
+.learn-more {
+  text-align: center;
+  display: block;
+}
+
+.learn-more .arrow {
+  display: inline-block;
+  border: 3px solid #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all .11s linear;
+}
+
+.learn-more .arrow:after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  top: 7px;
+  width: 28px;
+  height: 28px;
+  border-left: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  transform: rotate(-45deg);
+  transition: all .11s linear;
+}
+
+.learn-more .arrow:hover, .learn-more .arrow:hover:after {
+  border-color: #3fb8c5;
+}
+
+#use-case {
+  background: #3BA2DC;
+  color: #fbfbfb;
+}
+
+#use-case h3 {
+  color: #fff;
+  text-align: center;
+}
+
+.banner-social-buttons .btn {
+  background: #3fb8c5;
+  border-color: #3fb8c5;
+  padding: 11px 15px;
+}
+
+.banner-social-buttons .btn:hover {
+  background: #1e818c;
+  border-color: #1e818c;
+}
+
+.banner-social-buttons span {
+  font-weight: bold;
+}
+
+.img-logo {
+  width: 38px;
+  margin-right: 10px;
+}
+
+footer > .container {
+  text-align: center;
+}
+
+footer .link-list .link-img {
+  height: 40px;
+}
+
+footer .link-list .logo {
+  margin-right: 15px;
+}
+
+footer .link-list .logo .link-img {
+  height: 60px;
+}
+
+footer .link-list a {
+  cursor: pointer;
 }

@@ -8,7 +8,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Landing Page - Archive Lab</title>
+    <title>Archive Lab</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -25,8 +26,9 @@
   <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
+        <img class="img-logo" src="img/logo.png" alt="">
         <a class="navbar-brand" href="#">Archive Lab</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -34,13 +36,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a id="navbar-item-about" class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+                <a id="navbar-item-use-case" class="nav-link" href="#">Use Case</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a id="navbar-item-contact" class="nav-link" href="#">Contact</a>
             </li>
           </ul>
         </div>
@@ -53,13 +55,15 @@
         <div class="intro-message">
           <h1>"It's not what you look at that matters, it's what you see"</h1>
           <h3>Henry David Thoreau</h3>
-
+        </div>
+        <div class="learn-more">
+            <div class="arrow"></div>
         </div>
       </div>
     </header>
 
     <!-- Page Content -->
-    <section class="content-section-a">
+    <section id="about" class="content-section-a">
 
       <div class="container">
         <div class="row">
@@ -103,10 +107,10 @@
     </section>
     <!-- /.content-section-b -->
 
-    <section class="content-section-a">
+    <section id="use-case" class="content-section-a">
 
       <div class="container">
-
+        <h3>Use Case</h3>
         <div class="row">
           <div class="col-lg-5 ml-auto">
             <hr class="section-heading-spacer">
@@ -133,7 +137,7 @@
 
     <aside class="banner">
 
-      <div class="container">
+      <div id="contact" class="container">
 
         <div class="row">
 
@@ -141,7 +145,6 @@
             <ul class="list-inline banner-social-buttons">
               <li class="list-inline-item">
                 <a href="#" class="btn btn-secondary btn-lg">
-                  <i class="fa fa-witter fa-fw"></i>
                   <span class="network-name">It will help me to save time!</span>
                 </a>
               </li>
@@ -159,23 +162,10 @@
     <!-- Footer -->
     <footer>
       <div class="container">
-        <ul class="list-inline">
-          <li class="list-inline-item">
-            <a href="#">Home</a>
-          </li>
-          <li class="footer-menu-divider list-inline-item">&sdot;</li>
-          <li class="list-inline-item">
-            <a href="#about">About</a>
-          </li>
-          <li class="footer-menu-divider list-inline-item">&sdot;</li>
-          <li class="list-inline-item">
-            <a href="#services">Services</a>
-          </li>
-          <li class="footer-menu-divider list-inline-item">&sdot;</li>
-          <li class="list-inline-item">
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
+        <div class="link-list">
+          <a class="logo" href="https://archive-lab.mybluemix.net/"><img class="link-img" src="img/logo.png" alt=""></a>
+          <a href="https://github.com/jesiels/archive-lab"><img class="link-img" src="img/gb.png" alt=""></a>
+        </div>
         <p class="copyright text-muted small">Copyright &copy; Your Company 2017. All Rights Reserved</p>
       </div>
     </footer>
@@ -184,6 +174,24 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+      $(".learn-more .arrow, #navbar-item-about").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#about").offset().top - 56
+        }, 1000);
+      });
+      $("#navbar-item-use-case").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#use-case").offset().top - 56
+        }, 1000);
+      });
+      $("#navbar-item-contact").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#contact").offset().top - 56
+        }, 1000);
+      });
+    </script>
+
 
   </body>
 
