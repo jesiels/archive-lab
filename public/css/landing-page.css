@@ -231,6 +231,9 @@ p.copyright {
   margin-right: 10px;
 }
 
+.main-topics {
+	left: 43%;
+}
 footer > .container {
   text-align: center;
 }
