@@ -32,13 +32,16 @@
 		
 		ga('create', 'UA-104218014-1', 'auto');
 		
+		ga('send', 'pageview');
+		
 		// *** Added to enable ecommerce events send to GA 
 		ga('require', 'ec');
+		
 		// *** End Google Analytics Tracking snippet --> 
-		function PagePlayed() {
+		function PagePlayed( buttonTag) {
 
-			ga('create', 'UA-104218014-1', 'auto');	
-			ga('send', 'event', 'Videos', 'videoPlayed', 'Video LG');	
+
+			ga('send', 'event', 'click',buttonTag);	
 
 		} 
 	
@@ -164,7 +167,7 @@
           <div class="col-lg-6 my-auto">
             <ul class="list-inline banner-social-buttons">
               <li class="list-inline-item">
-                <a href="" onclick="PagePlayed()" class="btn btn-secondary btn-lg">
+                <a href="#" onclick="PagePlayed('willHelpButton')" class="btn btn-secondary btn-lg">
                   <span class="network-name">It will help me to save time!</span>
                 </a>
               </li>
