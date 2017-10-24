@@ -6,7 +6,9 @@ module.exports = {
         function(){
         	console.log("found it");
         }, 'Waiting for Search Input to become visible')
-      .click()
+      .click('#contact .btn', function(){
+      	console.log('clicked');
+      })
       .pause(5000)
       .end();
   }
