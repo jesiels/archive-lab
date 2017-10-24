@@ -26,29 +26,30 @@ body, h1, h2, h3, h4, h5, h6 {
 .intro-message {
   position: relative;
   padding-top: 25%;
-  padding-bottom: 17%;
+  padding-bottom: 7%;
   text-align: left;
 }
 
 .intro-message > h1 {
-  color: #07f7f7;
+  color: #00ffff;
   margin: 0;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
   margin-bottom: 20px;
 }
 
 .intro-message > h3 {
-  color: #53abab;
+  color: #c0ffff;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+}
+
+.intro-message > li {
+  margin-top: 50px;
 }
 
 .intro-divider {
   width: 400px;
   border-top: 1px solid #f8f8f8;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.intro-message>h3 {
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .intro-social-buttons i {
@@ -182,6 +183,7 @@ p.copyright {
   border-radius: 50%;
   cursor: pointer;
   transition: all .11s linear;
+  box-shadow: 0px 0px 7px #000;
 }
 
 .learn-more .arrow:after {
