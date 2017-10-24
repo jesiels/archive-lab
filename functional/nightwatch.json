@@ -25,6 +25,7 @@
       },
       "username" : "${SAUCE_USER}",
       "access_key" : "${SAUCE_KEY}",
+      "click_count" : "${CLICK_COUNT}",
 
       "desiredCapabilities": {
         "javascriptEnabled": true,

@@ -19,9 +19,14 @@ module.exports = {
 	    
 	      
 	     
-
+		  var clickCount = parseInt(browser.options.click_count);
+		  console.log(clickCount);
+		  if ( !clickCount )
+	      		clickCount = 100;
+	      		
+	      		
 	      var i = 0;
-	      while ( i < 100 ) {
+	      while ( i < clickCount ) {
 	      		browser.click('#contact .btn' , function() {
 	      			console.log('contact btn click');
 	      		});  
