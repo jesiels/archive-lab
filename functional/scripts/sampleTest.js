@@ -18,10 +18,10 @@ module.exports = {
 	      });
 	    
 	      
-	      console.log(browser);
-	      
+	     
+
 	      var i = 0;
-	      while ( i < 1000 ) {
+	      while ( i < 100 ) {
 	      		browser.click('#contact .btn' , function() {
 	      			console.log('contact btn click');
 	      		});  
